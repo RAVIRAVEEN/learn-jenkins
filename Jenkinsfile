@@ -28,7 +28,6 @@ pipeline {
                 sh  """
                   echo "here i execute shell-scrpiting"
                   env "$greetings"
-              
 
                 """
             }
