@@ -22,8 +22,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh """
-                  echo " here i execute shell-scrpiting 
+                sh  """
+                  echo "here i execute shell-scrpiting"
                   env 
 
                 """
