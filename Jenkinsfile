@@ -9,7 +9,7 @@ pipeline {
     }
     options {
         timeout(time: 1, unit: 'HOURS') 
-        disableConcurrentBuilds() 
+        disableConcurrentBuilds()
     }
 //   build
     stages {
@@ -29,7 +29,6 @@ pipeline {
                   echo "here i execute shell-scrpiting"
                   env "$greetings"
                   sleep 10
-
                 """
             }
         }
