@@ -4,9 +4,11 @@ pipeline {
          label 'agent-1' 
      }
 }
-
    environment { 
        GREETINGS = 'hello jenkins'
+    }
+    options {
+        timeout(time: 1, unit: 'HOURS') 
     }
 //   build
     stages {
@@ -24,7 +26,8 @@ pipeline {
             steps {
                 sh  """
                   echo "here i execute shell-scrpiting"
-                  env 
+                  env "$greetings"
+                  sleep 10
 
                 """
             }
