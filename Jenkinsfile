@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sh  """
                   echo "here i execute shell-scrpiting"
-                  env "$GREETINGS"
+                  echo  "$GREETINGS"
                   sleep 10
                 """
             }
